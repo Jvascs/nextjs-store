@@ -6,6 +6,8 @@ import { Bar } from "react-chartjs-2";
 import { Chart } from "chart.js";
 import { FaUser } from "react-icons/fa6";
 import { BsFillBoxSeamFill } from "react-icons/bs";
+import { BiCategory } from "react-icons/bi";
+
 import {
   LinearScale,
   CategoryScale,
@@ -21,7 +23,7 @@ const Dashboard = () => {
   const { totalUser, totalProduct } = useContext(AdminContext);
 
   const data = {
-    labels: ["Users", "Products"],
+    labels: ["Kullanıcılar", "Ürünler","Kategoriler"],
     datasets: [
       {
         label: "# of Items",
@@ -44,16 +46,23 @@ const Dashboard = () => {
 
   return (
     <div className=" p-5 flex flex-col items-center justify-center w-full bg-gray-200">
-      <h2 className="text-3xl font-bold mb-4 text-gray-700">Admin Dashboard</h2>
+      <h2 className="text-3xl font-bold mb-4 text-gray-700">Yönetim Paneli</h2>
       <div className="flex-grow flex flex-col md:flex-row items-center justify-center space-y-5 md:space-y-0 md:space-x-5">
         <div className=" w-52 bg-white shadow-lg rounded-lg p-5">
-          <h3 className="text-2xl font-bold mb-4 text-gray-700">Users</h3>
+          <h3 className="text-2xl font-bold mb-4 text-gray-700">Kullanıcılar</h3>
           <FaUser />
           <p className="text-xl font-bold text-blue-600">{totalUser?.length}</p>
         </div>
         <div className=" w-52 bg-white shadow-lg rounded-lg p-5">
-          <h3 className="text-2xl font-bold mb-4 text-gray-700">Products</h3>
+          <h3 className="text-2xl font-bold mb-4 text-gray-700">Ürünler</h3>
           <BsFillBoxSeamFill />
+          <p className="text-xl font-bold text-blue-600">
+            {totalProduct?.length}
+          </p>
+        </div>
+        <div className=" w-52 bg-white shadow-lg rounded-lg p-5">
+          <h3 className="text-2xl font-bold mb-4 text-gray-700">Kategoriler</h3>
+          <BiCategory />
           <p className="text-xl font-bold text-blue-600">
             {totalProduct?.length}
           </p>

@@ -1,7 +1,6 @@
 "use client";
 import { Context } from "@/Context/Context";
 import Loader from "@/components/Loader";
-import TestUser from "@/components/TestUser";
 import Image from "next/image";
 import Link from "next/link";
 import { useContext } from "react";
@@ -21,11 +20,11 @@ const Login = () => {
         <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-lg text-center">
             <h1 className="text-2xl font-bold sm:text-3xl">
-              Welcome to Shop 🛒
+              Hoş Geldiniz 🛒
             </h1>
 
             <p className="mt-4 text-gray-500">
-              Login to your account to continue shopping
+              Giriş yaparak özel sipariş verebilirsiniz
             </p>
           </div>
           {error && (
@@ -78,9 +77,9 @@ const Login = () => {
 
             <div className="flex items-center justify-between">
               <p className="text-sm text-gray-500">
-                No account?
+                Hesabın yokmu ?
                 <Link className="underline mx-1" href={"/signupPage"}>
-                  Sign up
+                  Kayıt Ol
                 </Link>
               </p>
 
@@ -88,11 +87,10 @@ const Login = () => {
                 type="submit"
                 className="inline-block rounded-lg bg-[#394149] px-10 md:px-20 py-3 text-sm font-medium text-white"
               >
-                {loading ? <Loader /> : "Login"}
+                {loading ? <Loader /> : "Giriş yap"}
               </button>
             </div>
           </form>
-          <TestUser />
         </div>
 
         <div className="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">

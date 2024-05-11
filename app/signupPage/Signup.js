@@ -51,11 +51,11 @@ const Signup = () => {
             </Link>
 
             <h1 className="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-              Welcome to Shop 🛒
+              Hoş Geldin 🛒
             </h1>
 
             <p className="mt-4 leading-relaxed text-gray-500">
-              Signup to get started with Shop
+
             </p>
             {error && (
               <div
@@ -75,7 +75,7 @@ const Signup = () => {
                   htmlFor="FirstName"
                   className="block text-sm font-medium text-gray-800"
                 >
-                  Name
+                  Ad&Soyad
                 </label>
 
                 <input
@@ -85,7 +85,7 @@ const Signup = () => {
                   required
                   value={signup.name}
                   onChange={handleChnage}
-                  placeholder="name"
+                  placeholder="İsim Soyisim"
                   className="mt-1 h-10 px-2  w-full rounded-md border-gray-200 bg-white border text-sm text-gray-800 shadow-sm"
                 />
               </div>
@@ -117,7 +117,7 @@ const Signup = () => {
                   className="block text-sm font-medium text-gray-800"
                 >
                   {" "}
-                  Password{" "}
+                  Şifre{" "}
                 </label>
 
                 <input
@@ -143,8 +143,7 @@ const Signup = () => {
                   />
 
                   <span className="text-sm text-gray-800">
-                    I want to receive emails about events, product updates and
-                    company announcements.
+                    Etkinlikler, ürün güncellemeleri ve şirket duyuruları hakkında e-posta almak istiyorum.
                   </span>
                 </label>
               </div>
@@ -154,16 +153,16 @@ const Signup = () => {
                   className="inline-block shrink-0 rounded-md border border-[#394149] bg-[#13161a] px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-[#394149] focus:outline-none focus:ring active:text-[#000000]"
                   type="submit"
                 >
-                  {loading ? <Loader /> : " Create an account"}
+                  {loading ? <Loader /> : " Hesabımı Oluştur"}
                 </button>
 
                 <p className="mt-4 text-sm text-gray-500 sm:mt-0">
-                  Already have an account?
+                  Zaten Hesabın varmı ?
                   <Link
                     href="/loginpage"
                     className="text-gray-800 underline mx-1"
                   >
-                    Log in
+                    Giriş Yap
                   </Link>
                   .
                 </p>
