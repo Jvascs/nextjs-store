@@ -39,7 +39,7 @@ const Mobile = ({ setIsOpen, categories }) => {
                 onClick={() => setIsOpen(false)}
                 className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
               >
-                Home
+                Anasayfa
               </Link>
             </li>
             {user?.data?.isAdmin && (
@@ -56,7 +56,7 @@ const Mobile = ({ setIsOpen, categories }) => {
             <li>
               <details className="group [&_summary::-webkit-details-marker]:hidden">
                 <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                  <span className="text-sm font-medium"> Categories </span>
+                  <span className="text-sm font-medium"> Kategoriler </span>
 
                   <span className="shrink-0 transition duration-300 group-open:-rotate-180">
                     <svg
@@ -97,7 +97,7 @@ const Mobile = ({ setIsOpen, categories }) => {
                 onClick={() => setIsOpen(false)}
                 className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
               >
-                About
+                Hakkımda
               </Link>
             </li>
 
@@ -107,14 +107,14 @@ const Mobile = ({ setIsOpen, categories }) => {
                 onClick={() => setIsOpen(false)}
                 className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
               >
-                Products
+                Ürünlerim
               </Link>
             </li>
 
             <li>
               <details className="group [&_summary::-webkit-details-marker]:hidden">
                 <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                  <span className="text-sm font-medium"> Account </span>
+                  <span className="text-sm font-medium"> Hesap </span>
 
                   <span className="shrink-0 transition duration-300 group-open:-rotate-180">
                     <svg
@@ -143,7 +143,7 @@ const Mobile = ({ setIsOpen, categories }) => {
                         }}
                         className="w-full cursor-pointer rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-gray-700"
                       >
-                        Logout
+                        Çıkış yap
                       </button>
                     </>
                   ) : (
@@ -156,7 +156,7 @@ const Mobile = ({ setIsOpen, categories }) => {
                           type="submit"
                           className="w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-gray-700"
                         >
-                          Login
+                          Giriş yap
                         </button>
                       </Link>
                       <Link
@@ -167,7 +167,7 @@ const Mobile = ({ setIsOpen, categories }) => {
                           type="submit"
                           className="w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-gray-700"
                         >
-                          Register
+                          Kayıt Ol
                         </button>
                       </Link>
                     </>
@@ -190,7 +190,7 @@ const Mobile = ({ setIsOpen, categories }) => {
               ) : (
                 <p className="text-xs">
                   <strong className="block font-medium">
-                    Welcome to our store
+                    Dünyama Hoş Geldiniz
                   </strong>
                 </p>
               )}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@mern.ovuisn6.mongodb.net">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.49">
+    <root id="1">
+      <ServerVersion>7.0.8</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="local"/>
+    <schema id="4" parent="1" name="auth1"/>
+    <schema id="5" parent="1" name="blog"/>
+    <schema id="6" parent="1" name="book"/>
+    <schema id="7" parent="1" name="ecommerce"/>
+    <schema id="8" parent="1" name="passportjs"/>
+    <schema id="9" parent="1" name="role"/>
+    <schema id="10" parent="1" name="sample_mflix"/>
+    <schema id="11" parent="1" name="tailor">
+      <LocalIntrospectionTimestamp>2024-05-12.17:50:49</LocalIntrospectionTimestamp>
+    </schema>
+    <schema id="12" parent="1" name="twitter"/>
+    <table id="13" parent="11" name="carts"/>
+    <table id="14" parent="11" name="categories"/>
+    <table id="15" parent="11" name="clothingproducts"/>
+    <table id="16" parent="11" name="users"/>
+    <column id="17" parent="14" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="18" parent="14" name="description">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="19" parent="14" name="name">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="20" parent="14" name="__v">
+      <DasType>Int32|4s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="21" parent="16" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="22" parent="16" name="__v">
+      <DasType>Int32|4s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="23" parent="16" name="email">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="24" parent="16" name="name">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="25" parent="16" name="isAdmin">
+      <DasType>Boolean|12s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="26" parent="16" name="password">
+      <DasType>String|12s</DasType>
+      <Position>2</Position>
+    </column>
+  </database-model>
+</dataSource>

@@ -8,6 +8,7 @@ import { ProductContextProvider } from "@/Context/CreateProduct";
 import { Toaster } from "react-hot-toast";
 import CartProvider from "@/Context/CartProvider";
 import AdminProvider from "@/Context/AdminProvider";
+import CategoryProvider from "@/Context/CategoryProvider";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -25,10 +26,12 @@ export default function RootLayout({ children }) {
           <AdminProvider>
             <ProductContextProvider>
               <CartProvider>
+                <CategoryProvider>
                 <Header />
                 <Toaster />
                 {children}
                 <Footer />
+                </CategoryProvider>
               </CartProvider>
             </ProductContextProvider>
           </AdminProvider>
